@@ -76,6 +76,13 @@ function SectionTitle({ eyebrow, title, children, center = false }) {
 }
 
 function openCalendly() {
+  if (window.gtag) {
+    window.gtag('event', 'book_call_click', {
+      event_category: 'engagement',
+      event_label: 'Calendly Click'
+    });
+  }
+
   window.open(CALENDLY_URL, "_blank", "noopener,noreferrer");
 }
 
