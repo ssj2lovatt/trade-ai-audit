@@ -165,9 +165,26 @@ function Card({ icon, title, desc, tag }) {
 }
 
 const css = `
-*{box-sizing:border-box}body{margin:0;background:${C.bg};}.site{font-family:Georgia,serif;background:${C.bg};color:${C.text};}overflow-x:hidden}
+*{box-sizing:border-box}body{margin:0;background:${C.bg};}
+.site{font-family:Georgia,serif;background:${C.bg};color:${C.text};overflow-x:hidden}
 
-.nav{position:sticky;top:0;z-index:10;height:80px;background:${C.bg2};backdrop-filter:blur(16px);border-bottom:1px solid ${C.divider};padding:0 5%;
+.quiz-link {
+  margin-top: 16px;
+  color: rgba(238,242,247,0.65);
+  font-size: 14px;
+}
+
+.quiz-link a {
+  color: #17a2c4;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.quiz-link a:hover {
+  text-decoration: underline;
+}
+
+.nav{position:sticky;top:0;z-index:10;;height:80px;background:${C.bg2};backdrop-filter:blur(16px);border-bottom:1px solid ${C.divider};padding:0 5%;
 
 display:flex;align-items:center;justify-content:space-between;gap:24px}.nav-scrolled{background:rgba(8,13,24,.97)}.brand{display:flex;align-items:center;
 
