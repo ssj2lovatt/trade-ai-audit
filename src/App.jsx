@@ -21,7 +21,7 @@ const navLinks = [
 ];
 
 const problems = [
-  { icon: "⏱", title: "Manual Quoting", desc: "Spending your evenings writing quotes by hand? Most trade businesses lose 8-15 hours a week on admin that could be sorted properly." },
+  { icon: "⏱", title: "Manual Quoting", desc: "Spending your evenings writing quotes by hand? Most trade businesses lose 8-12 hours a week on admin that could be sorted properly." },
   { icon: "📵", title: "Missed Calls", desc: "Every missed call is a missed job. While you're on the tools, potential customers are calling your competitor instead." },
   { icon: "💸", title: "Chasing Invoices", desc: "Late payments hurt cashflow. Automated reminders and simple payment systems get you paid faster without the awkward phone calls." },
   { icon: "✉️", title: "Drowning in Emails", desc: "The same questions, over and over -- pricing, availability, job details. Hours a week answering emails that could be handled without you." },
@@ -34,9 +34,9 @@ const steps = [
 ];
 
 const plans = [
-  { name: "Audit Only", label: "Entry -- Perfect starting point", price: "£249", features: ["Full business assessment", "Written findings report", "Problem area breakdown", "Estimated savings summary"] },
-  { name: "Audit + Action Plan", label: "Most Popular", price: "£499", highlight: true, sub: "This is where most businesses start", features: ["Everything in Audit Only", "Specific tool recommendations", "Step-by-step action plan", "Follow-up consultation call"] },
-  { name: "Done For You Setup", label: "Full Service", price: "£899", sub: "Best for busy owners who want everything handled", features: ["Everything in Audit + Action Plan", "Full tool setup and automation", "AI email responses configured", "10-day draft review -- you approve before sending", "Team walkthrough session", "30-day support included"] },
+  { name: "AI Audit Report", label: "Entry -- Perfect starting point", price: "£249", features: ["15-minute assessment call", "Full AI-powered efficiency audit", "Detailed breakdown of time and money losses", "Clear recommendations", "20-minute follow-up call"] },
+  { name: "AI Audit + Missed-Call SMS", label: "Most Popular", price: "£499", highlight: true, sub: "For tradespeople who miss calls and want an immediate fix", features: ["Everything in AI Audit Report", "Automated missed-call SMS system built and installed", "Instant professional text response (within 10 seconds)", "Twilio account setup assistance", "UK virtual number included (first month)", "Full training and monitoring guide", "Two 30-minute implementation sessions", "2 weeks of email support"] },
+  { name: "Done For You", label: "Full Service", price: "£899", sub: "Complete admin system built for you -- no DIY required", features: ["Everything in AI Audit + Missed-Call SMS", "All automations from your audit built for you", "Automated quote templates", "Invoice reminders", "Customer follow-up sequences", "Full handover and training", "First month of Ongoing Optimisation included (£59/month thereafter)"] },
 ];
 
 const tools = [
@@ -136,7 +136,7 @@ export default function App() {
 </p>
 
 <p className="micro">We'll show you exactly where your time is going. Free. No obligation.</p>
-        <div className="stats">{[["8-15 hrs", "Saved per week"], ["£5,000+", "Typical annual saving"], ["48 hrs", "Report turnaround"]].map(([n, l]) => <div key={l}><strong>{n}</strong><span>{l}</span></div>)}</div>
+        <div className="stats">{[["8-12 hrs", "Saved per week"], ["£6,000+", "Typical annual saving"], ["48 hrs", "Report turnaround"]].map(([n, l]) => <div key={l}><strong>{n}</strong><span>{l}</span></div>)}</div>
       </div>
     </header>
 
