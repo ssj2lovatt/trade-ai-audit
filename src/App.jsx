@@ -106,104 +106,36 @@ export default function App() {
       <div className="nav-links">{navLinks.map(([id, label]) => <button key={id} onClick={() => scrollTo(id)}>{label}</button>)}<button className="small-cta" onClick={openCalendly}>Book Free Call</button></div>
     </nav>
 
-    <header className="hero">
-      <div className="grid-bg" /><div className="glow one" /><div className="glow two" />
-      <div className="hero-content" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "center" }}>
-        <div className="kicker" style={{ opacity: heroVisible ? 1 : 0 }}><span />Admin Systems for UK Trades</div>
-        <h1 style={{ opacity: heroVisible ? 1 : 0 }}>Your trade business is losing time.</h1>
-        <h1 className="accent" style={{ opacity: heroVisible ? 1 : 0 }}>We'll find where it's going.</h1>
-        <p>We help small trade businesses cut down the admin that eats into evenings -- quotes, missed calls, invoices, emails and bookings -- using simple systems set up properly.{/* Video Demo Section */}
-<div style={{
-  position: "absolute",
-  right: "4%",
-  top: "50%",
-  transform: "translateY(-50%)",
-  width: "44%",
-  maxWidth: "560px",
-  borderRadius: "16px",
-  overflow: "hidden",
-  border: "1px solid rgba(46,134,193,0.35)",
-  boxShadow: "0 8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(23,162,196,0.1)",
-  zIndex: 2,
-}}>
-  <div style={{
-    background: "rgba(12,18,32,0.9)",
-    padding: "10px 16px",
-    borderBottom: "1px solid rgba(46,134,193,0.25)",
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
-  }}>
-    <div style={{ display: "flex", gap: "6px" }}>
-      <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
-      <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
-      <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+   <header className="hero">
+  <div className="grid-bg" /><div className="glow one" /><div className="glow two" />
+  <div className="hero-content" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "center" }}>
+    
+    <div>
+      <div className="kicker" style={{ opacity: heroVisible ? 1 : 0 }}><span />Admin Systems for UK Trades</div>
+      <h1 style={{ opacity: heroVisible ? 1 : 0 }}>Your trade business is losing time.</h1>
+      <h1 className="accent" style={{ opacity: heroVisible ? 1 : 0 }}>We'll find where it's going.</h1>
+      <p>We help small trade businesses cut down the admin that eats into evenings -- quotes, missed calls, invoices, emails and bookings -- using simple systems set up properly.</p>
+      <p className="note">Most businesses don't realise how much time they're losing until we break it down.</p>
     </div>
-    <span style={{ fontSize: "10px", color: "rgba(238,242,247,0.4)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
-      Live Demo — AI Quote Generator
-    </span>
-  </div>
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    style={{ width: "100%", display: "block" }}
-    src="/website-video.mp4"
-  />
-  <div style={{
-    background: "rgba(12,18,32,0.9)",
-    padding: "12px 16px",
-    borderTop: "1px solid rgba(46,134,193,0.25)",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-  }}>
-    <span style={{ fontSize: "12px", color: "rgba(238,242,247,0.55)" }}>
-      This is what your quoting could look like.
-    </span>
-    <button
-      onClick={openCalendly}
-      style={{
-        background: "linear-gradient(135deg, #17a2c4 0%, #1ab8e0 100%)",
-        color: "#080d18",
-        border: "none",
-        borderRadius: "6px",
-        padding: "7px 14px",
-        fontFamily: "Georgia, serif",
-        fontSize: "12px",
-        fontWeight: "bold",
-        cursor: "pointer",
-      }}
-    >Book a free call →</button>
-  </div>
-</div> </p>
-        
-<p className="note">
-  Most businesses don't realise how much time they're losing until we break it down.
-</p>
 
-<div className="button-row">
-  <button className="cta" onClick={openCalendly}>
-    Book a Free 15-Minute Assessment Call
-  </button>
-
-  <button className="ghost" onClick={() => scrollTo("how-it-works")}>
-    See How It Works
-  </button>
-</div>
-
-<p className="quiz-link">
-  Not ready to book yet?{" "}
-  <a href="https://tally.so/r/rj2gEo" target="_blank" rel="noopener noreferrer">
-    Take the free 60-second efficiency check
-  </a>
-</p>
-
-<p className="micro">We'll show you exactly where your time is going. Free. No obligation.</p>
-        <div className="stats">{[["8-12 hrs", "Saved per week"], ["£6,000+", "Typical annual saving"], ["48 hrs", "Report turnaround"]].map(([n, l]) => <div key={l}><strong>{n}</strong><span>{l}</span></div>)}</div>
+    <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid rgba(46,134,193,0.35)", boxShadow: "0 8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(23,162,196,0.1)" }}>
+      <div style={{ background: "rgba(12,18,32,0.9)", padding: "10px 16px", borderBottom: "1px solid rgba(46,134,193,0.25)", display: "flex", alignItems: "center", gap: "10px" }}>
+        <div style={{ display: "flex", gap: "6px" }}>
+          <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+          <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+          <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+        </div>
+        <span style={{ fontSize: "10px", color: "rgba(238,242,247,0.4)", letterSpacing: "0.1em", textTransform: "uppercase" }}>Live Demo — AI Quote Generator</span>
       </div>
-    </header>
+      <video autoPlay muted loop playsInline style={{ width: "100%", display: "block" }} src="/website-video.mp4" />
+      <div style={{ background: "rgba(12,18,32,0.9)", padding: "12px 16px", borderTop: "1px solid rgba(46,134,193,0.25)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ fontSize: "12px", color: "rgba(238,242,247,0.55)" }}>This is what your quoting could look like.</span>
+        <button onClick={openCalendly} style={{ background: "linear-gradient(135deg, #17a2c4 0%, #1ab8e0 100%)", color: "#080d18", border: "none", borderRadius: "6px", padding: "7px 14px", fontFamily: "Georgia, serif", fontSize: "12px", fontWeight: "bold", cursor: "pointer" }}>Book a free call →</button>
+      </div>
+    </div>
+
+  </div>
+</header>
 
     <section><SectionTitle center eyebrow="The Reality" title="Where is your time really going?" /><div className="cards four">{problems.map((p, i) => <FadeIn key={p.title} delay={i * .1}><Card {...p} /></FadeIn>)}</div></section>
 
