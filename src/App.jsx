@@ -119,8 +119,8 @@ export default function App() {
 </p>
 {/* Video Demo Section */}
 <div style={{
-  margin: "48px auto 0",
-  maxWidth: "800px",
+  margin: "40px auto 0",
+  maxWidth: "480px",
   borderRadius: "16px",
   overflow: "hidden",
   border: "1px solid rgba(46,134,193,0.35)",
