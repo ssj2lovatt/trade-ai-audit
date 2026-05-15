@@ -108,16 +108,11 @@ export default function App() {
 
     <header className="hero">
       <div className="grid-bg" /><div className="glow one" /><div className="glow two" />
-      <div className="hero-content">
+      <div className="hero-content" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "40px", alignItems: "center" }}>
         <div className="kicker" style={{ opacity: heroVisible ? 1 : 0 }}><span />Admin Systems for UK Trades</div>
         <h1 style={{ opacity: heroVisible ? 1 : 0 }}>Your trade business is losing time.</h1>
         <h1 className="accent" style={{ opacity: heroVisible ? 1 : 0 }}>We'll find where it's going.</h1>
-        <p>We help small trade businesses cut down the admin that eats into evenings -- quotes, missed calls, invoices, emails and bookings -- using simple systems set up properly.</p>
-        
-<p className="note">
-  Most businesses don't realise how much time they're losing until we break it down.
-</p>
-{/* Video Demo Section */}
+        <p>We help small trade businesses cut down the admin that eats into evenings -- quotes, missed calls, invoices, emails and bookings -- using simple systems set up properly.{/* Video Demo Section */}
 <div style={{
   position: "absolute",
   right: "4%",
@@ -182,7 +177,12 @@ export default function App() {
       }}
     >Book a free call →</button>
   </div>
-</div>
+</div> </p>
+        
+<p className="note">
+  Most businesses don't realise how much time they're losing until we break it down.
+</p>
+
 <div className="button-row">
   <button className="cta" onClick={openCalendly}>
     Book a Free 15-Minute Assessment Call
