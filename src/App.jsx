@@ -119,27 +119,32 @@ export default function App() {
 </p>
 {/* Video Demo Section */}
 <div style={{
-  margin: "40px auto 0",
-  maxWidth: "480px",
+  position: "absolute",
+  right: "4%",
+  top: "50%",
+  transform: "translateY(-50%)",
+  width: "44%",
+  maxWidth: "560px",
   borderRadius: "16px",
   overflow: "hidden",
   border: "1px solid rgba(46,134,193,0.35)",
-  boxShadow: "0 8px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(23,162,196,0.1)",
+  boxShadow: "0 8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(23,162,196,0.1)",
+  zIndex: 2,
 }}>
   <div style={{
     background: "rgba(12,18,32,0.9)",
-    padding: "12px 20px",
+    padding: "10px 16px",
     borderBottom: "1px solid rgba(46,134,193,0.25)",
     display: "flex",
     alignItems: "center",
     gap: "10px",
   }}>
     <div style={{ display: "flex", gap: "6px" }}>
-      <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
-      <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
-      <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+      <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+      <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+      <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
     </div>
-    <span style={{ fontSize: "11px", color: "rgba(238,242,247,0.4)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+    <span style={{ fontSize: "10px", color: "rgba(238,242,247,0.4)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
       Live Demo — AI Quote Generator
     </span>
   </div>
@@ -153,13 +158,13 @@ export default function App() {
   />
   <div style={{
     background: "rgba(12,18,32,0.9)",
-    padding: "16px 20px",
+    padding: "12px 16px",
     borderTop: "1px solid rgba(46,134,193,0.25)",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
   }}>
-    <span style={{ fontSize: "13px", color: "rgba(238,242,247,0.55)" }}>
+    <span style={{ fontSize: "12px", color: "rgba(238,242,247,0.55)" }}>
       This is what your quoting could look like.
     </span>
     <button
@@ -169,12 +174,11 @@ export default function App() {
         color: "#080d18",
         border: "none",
         borderRadius: "6px",
-        padding: "8px 18px",
+        padding: "7px 14px",
         fontFamily: "Georgia, serif",
-        fontSize: "13px",
+        fontSize: "12px",
         fontWeight: "bold",
         cursor: "pointer",
-        letterSpacing: "0.04em",
       }}
     >Book a free call →</button>
   </div>
