@@ -117,7 +117,68 @@ export default function App() {
 <p className="note">
   Most businesses don't realise how much time they're losing until we break it down.
 </p>
-
+{/* Video Demo Section */}
+<div style={{
+  margin: "48px auto 0",
+  maxWidth: "800px",
+  borderRadius: "16px",
+  overflow: "hidden",
+  border: "1px solid rgba(46,134,193,0.35)",
+  boxShadow: "0 8px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(23,162,196,0.1)",
+}}>
+  <div style={{
+    background: "rgba(12,18,32,0.9)",
+    padding: "12px 20px",
+    borderBottom: "1px solid rgba(46,134,193,0.25)",
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  }}>
+    <div style={{ display: "flex", gap: "6px" }}>
+      <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+      <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+      <div style={{ width: "10px", height: "10px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
+    </div>
+    <span style={{ fontSize: "11px", color: "rgba(238,242,247,0.4)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+      Live Demo — AI Quote Generator
+    </span>
+  </div>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    style={{ width: "100%", display: "block" }}
+    src="/website video.mp4"
+  />
+  <div style={{
+    background: "rgba(12,18,32,0.9)",
+    padding: "16px 20px",
+    borderTop: "1px solid rgba(46,134,193,0.25)",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  }}>
+    <span style={{ fontSize: "13px", color: "rgba(238,242,247,0.55)" }}>
+      This is what your quoting could look like.
+    </span>
+    <button
+      onClick={openCalendly}
+      style={{
+        background: "linear-gradient(135deg, #17a2c4 0%, #1ab8e0 100%)",
+        color: "#080d18",
+        border: "none",
+        borderRadius: "6px",
+        padding: "8px 18px",
+        fontFamily: "Georgia, serif",
+        fontSize: "13px",
+        fontWeight: "bold",
+        cursor: "pointer",
+        letterSpacing: "0.04em",
+      }}
+    >Book a free call →</button>
+  </div>
+</div>
 <div className="button-row">
   <button className="cta" onClick={openCalendly}>
     Book a Free 15-Minute Assessment Call
