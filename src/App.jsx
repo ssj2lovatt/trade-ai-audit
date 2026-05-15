@@ -149,7 +149,7 @@ export default function App() {
     loop
     playsInline
     style={{ width: "100%", display: "block" }}
-    src="/website video.mp4"
+    src="/website-video.mp4"
   />
   <div style={{
     background: "rgba(12,18,32,0.9)",
