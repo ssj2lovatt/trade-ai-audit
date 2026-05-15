@@ -118,7 +118,7 @@ export default function App() {
       <p className="note">Most businesses don't realise how much time they're losing until we break it down.</p>
     </div>
 
-    <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid rgba(46,134,193,0.35)", boxShadow: "0 8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(23,162,196,0.1)" alignSelf: "center" }}>
+    <div style={{ borderRadius: "16px", overflow: "hidden", border: "1px solid rgba(46,134,193,0.35)", boxShadow: "0 8px 40px rgba(0,0,0,0.5), 0 0 0 1px rgba(23,162,196,0.1)" ,alignSelf: "center" }}>
       <div style={{ background: "rgba(12,18,32,0.9)", padding: "10px 16px", borderBottom: "1px solid rgba(46,134,193,0.25)", display: "flex", alignItems: "center", gap: "10px" }}>
         <div style={{ display: "flex", gap: "6px" }}>
           <div style={{ width: "8px", height: "8px", borderRadius: "50%", background: "rgba(255,255,255,0.15)" }} />
